@@ -1,0 +1,10 @@
+^C:\USERS\ABDEB\STUDIOPROJECTS\DAY18\BUILD\WINDOWS\CMAKEFILES\5B3B6A895408966F0622A7EAFDC67EEF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/abdeb/StudioProjects/day18/windows -BC:/Users/abdeb/StudioProjects/day18/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/abdeb/StudioProjects/day18/build/windows/day18.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
